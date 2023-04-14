@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		019DF4B58AEDF1801C577778 /* Pods_MOBINT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76DB0189673B2C4FB19692B /* Pods_MOBINT.framework */; };
 		920E7DB729E94296000897AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920E7DB629E94296000897AC /* AppDelegate.swift */; };
 		920E7DB929E94296000897AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920E7DB829E94296000897AC /* SceneDelegate.swift */; };
 		920E7DBB29E94296000897AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920E7DBA29E94296000897AC /* MainViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79FEA9ABAD920478FF2EBAE7 /* Pods-MOBINT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOBINT.release.xcconfig"; path = "Target Support Files/Pods-MOBINT/Pods-MOBINT.release.xcconfig"; sourceTree = "<group>"; };
 		920E7DB329E94296000897AC /* MOBINT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOBINT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		920E7DB629E94296000897AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		920E7DB829E94296000897AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		920E7DC229E94297000897AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		920E7DC429E94297000897AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		920E7DCB29E9499E000897AC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C151BEB840278BE3960EA082 /* Pods-MOBINT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOBINT.debug.xcconfig"; path = "Target Support Files/Pods-MOBINT/Pods-MOBINT.debug.xcconfig"; sourceTree = "<group>"; };
+		C76DB0189673B2C4FB19692B /* Pods_MOBINT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOBINT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019DF4B58AEDF1801C577778 /* Pods_MOBINT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		569AF423FFE73972CB490D64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C151BEB840278BE3960EA082 /* Pods-MOBINT.debug.xcconfig */,
+				79FEA9ABAD920478FF2EBAE7 /* Pods-MOBINT.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6C7C7B894C37417A05535897 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C76DB0189673B2C4FB19692B /* Pods_MOBINT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		920E7DAA29E94296000897AC = {
 			isa = PBXGroup;
 			children = (
 				920E7DB529E94296000897AC /* MOBINT */,
 				920E7DB429E94296000897AC /* Products */,
+				569AF423FFE73972CB490D64 /* Pods */,
+				6C7C7B894C37417A05535897 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 920E7DC729E94297000897AC /* Build configuration list for PBXNativeTarget "MOBINT" */;
 			buildPhases = (
+				6688E613656332923E8344F0 /* [CP] Check Pods Manifest.lock */,
 				920E7DAF29E94296000897AC /* Sources */,
 				920E7DB029E94296000897AC /* Frameworks */,
 				920E7DB129E94296000897AC /* Resources */,
+				D10FBAF84DF402CEE3F47B22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6688E613656332923E8344F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MOBINT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D10FBAF84DF402CEE3F47B22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MOBINT/Pods-MOBINT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MOBINT/Pods-MOBINT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MOBINT/Pods-MOBINT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		920E7DAF29E94296000897AC /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		920E7DC829E94297000897AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C151BEB840278BE3960EA082 /* Pods-MOBINT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		920E7DC929E94297000897AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79FEA9ABAD920478FF2EBAE7 /* Pods-MOBINT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
