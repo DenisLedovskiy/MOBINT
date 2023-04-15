@@ -18,7 +18,7 @@ class AppCoordinator {
     }
 
     func mainScene() {
-        let module = MainViewController()
+        let module = MainModuleBuilder.build()
         window?.rootViewController = module
         window?.makeKeyAndVisible()
     }

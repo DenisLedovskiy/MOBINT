@@ -9,5 +9,6 @@ target 'MOBINT' do
 
   pod 'Alamofire'
   pod 'SnapKit'
+pod 'Kingfisher'
 
 end
